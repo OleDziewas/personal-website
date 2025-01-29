@@ -29,20 +29,20 @@
         </div>
     </nav>
 
-    <h1 class="text-secondary display-1 px-5 pt-5 pb-md-3">My Projects</h1>
-    <div class="container-fluid d-flex flex-column px-5 mt-0 mt-md-5">
+    <h1 class="text-secondary display-3 fw-bold px-5 pt-5 pb-md-3">My Projects</h1>
+    <div class="container-fluid d-flex flex-column px-5 mt-0 mt-md-5 pb-5">
         <ul class="list-group list-group-flush">
             <!-- Item 1 -->
             <li>
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="col-md-7 col-sm-12 d-flex flex-column text-secondary mt-4 mt-md-0 pe-0 pe-md-4">
-                        <h1 class="order-1 order-md-1 display-4 pb-2">FilmBibWeb</h1>
+                        <h1 class="order-1 order-md-1 display-6 fw-bold pb-2">FilmBibWeb</h1>
                         <p class="order-3 order-md-2 fs-5"> This was the first larger project I coded by myself at the age of 17 in order to help my dad, 
                             structure and organize the loads of recorded movies and series he had collected over the years. 
-                            This project is based on a raspberry pi running a local Apache webserver and managing the MariaDB 
+                            This project is based on a Raspberry Pi running a local Apache web server and managing the MariaDB 
                             that I created to keep track of the movies and their storage locations. </br>
-                            The webinterface which is based on PHP allows my dad to quickly check for already recorded movies and their current storage location.
-                            The scannning of the drives is done by a python script which also adds additional information to each movie entry by calling the IMDb-API.
+                            The web interface which is based on PHP allows my dad to quickly check for already recorded movies and their current storage location.
+                            The scanning of the drives is done by a python script, which also adds additional information to each movie entry by calling the IMDb-API.
                         </p>
                         <ul class="order-4 order-md-4 list-group list-group-horizontal flex-wrap col-sm-12">
                             <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">PHP</li>
@@ -62,13 +62,14 @@
             <li>
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="col-md-7 col-sm-12 d-flex flex-column text-secondary mt-4 mt-md-0 pe-0 pe-md-4">
-                        <h1 class="order-1 order-md-1 display-4 pb-2">Spotify-Playlist-Creator</h1>
-                        <p class="order-3 order-md-2 fs-5"> This was the first larger project I coded by myself at the age of 17 in order to help my dad, 
-                            structure and organize the loads of recorded movies and series he had collected over the years. 
-                            This project is based on a raspberry pi running a local Apache webserver and managing the MariaDB 
-                            that I created to keep track of the movies and their storage locations. </br>
-                            The webinterface which is based on PHP allows my dad to quickly check for already recorded movies and their current storage location.
-                            The scannning of the drives is done by a python script which also adds additional information to each movie entry by calling the IMDb-API.
+                        <h1 class="order-1 order-md-1 display-6 fw-bold pb-2">Spotify-Playlist-Creator</h1>
+                        <p class="order-3 order-md-2 fs-5">
+                            I created this app/website because of my love for discovering new music and the process of finding new songs I can play and map for Beat Saber. 
+                            The website is based on the Svelte-Framework and designed with Tailwind.
+                            The basic functionality is to create playlists you can add to Spotify that are filled with random songs based on certain features like popularity or genre.
+                            </br>
+                            The song search is based on the Spotify API and bound to your own account and preferences. Therefore, the results tend to feel less random than I would have liked to.
+                            Since the app has not been verified by Spotify, the functionality can only be accessed by me and persons I add to the developer list.
                         </p>
                         <ul class="order-4 order-md-4 list-group list-group-horizontal flex-wrap col-sm-12">
                             <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">SpotifyAPI</li>
@@ -87,13 +88,14 @@
             <li>
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="col-md-7 col-sm-12 d-flex flex-column text-secondary mt-4 mt-md-0 pe-0 pe-md-4">
-                        <h1 class="order-1 order-md-1 display-4 pb-2">VR-Avatar-Reconstruction</h1>
-                        <p class="order-3 order-md-2 fs-5"> This was the first larger project I coded by myself at the age of 17 in order to help my dad, 
-                            structure and organize the loads of recorded movies and series he had collected over the years. 
-                            This project is based on a raspberry pi running a local Apache webserver and managing the MariaDB 
-                            that I created to keep track of the movies and their storage locations. </br>
-                            The webinterface which is based on PHP allows my dad to quickly check for already recorded movies and their current storage location.
-                            The scannning of the drives is done by a python script which also adds additional information to each movie entry by calling the IMDb-API.
+                        <h1 class="order-1 order-md-1 display-6 fw-bold pb-2">VR-Avatar-Reconstruction</h1>
+                        <p class="order-3 order-md-2 fs-5">
+                            This is the project I have done for my bachelor thesis "Reconstruction of virtual reality avatars from sparse data using deep learning." 
+                            The goal was to recreate full body avatars from the sparse inputs of a VR headset, and comparing multiple deep learning techniques in doing so.
+                            Therefore, I trained several Transformer-, LSTM- and CNN-Architectures on the "Talking With Hands 16.2M"-dataset and 
+                            compared their results in predicting the next full body pose from only the positions and rotations of headset and two controllers.
+                            In the end no architecture was able to consistently predict the lower body movements from the upper body input signals,
+                            but the Transformer-Architecture showed the most stable and precise results.
                         </p>
                         <ul class="order-4 order-md-4 list-group list-group-horizontal flex-wrap col-sm-12">
                             <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Python</li>
@@ -111,20 +113,21 @@
             </li>
             <!-- Item 4 -->
             <hr class="border-3 opacity-75 border-secondary my-3 my-md-5">
-            <li>
+            <li class="mb-5">
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="col-md-7 col-sm-12 d-flex flex-column text-secondary mt-4 mt-md-0 pe-0 pe-md-4">
-                        <h1 class="order-1 order-md-1 display-4 pb-2">Personal Website</h1>
-                        <p class="order-3 order-md-2 fs-5"> This was the first larger project I coded by myself at the age of 17 in order to help my dad, 
-                            structure and organize the loads of recorded movies and series he had collected over the years. 
-                            This project is based on a raspberry pi running a local Apache webserver and managing the MariaDB 
-                            that I created to keep track of the movies and their storage locations. </br>
-                            The webinterface which is based on PHP allows my dad to quickly check for already recorded movies and their current storage location.
-                            The scannning of the drives is done by a python script which also adds additional information to each movie entry by calling the IMDb-API.
+                        <h1 class="order-1 order-md-1 display-6 fw-bold pb-2">Personal Website</h1>
+                        <p class="order-3 order-md-2 fs-5"> 
+                            This is the website you are currently on. It is only built on HTML and Bootstrap and should therefore be very fast and responsive. 
+                            I hope this website could give you some insights about myself and what I am doing :D.
+                            </br>
+                            </br>
+                            Feel free to contact me on the socials that were linked on the home page.
                         </p>
                         <ul class="order-4 order-md-4 list-group list-group-horizontal flex-wrap col-sm-12">
                             <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">HTML</li>
                             <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Bootstrap</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Responsive Webdesign</li>
                         </ul>
                     </div>
                     <a class="order-2 order-md-3 mt-3 mt-md-0" href="../index.html">

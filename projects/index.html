@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <title>Projects</title>
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.ico">
+    <title>Ole Dziewas - Personal Website</title>
 </head>
+<style>
+    img:hover{
+        border-color: #cff4fc !important;
+    }
+</style>
 <body class="bg-dark">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <button class="navbar-toggler navbar-inverse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,6 +28,112 @@
             </div>
         </div>
     </nav>
+
+    <h1 class="text-secondary display-1 px-5 pt-5 pb-md-3">My Projects</h1>
+    <div class="container-fluid d-flex flex-column px-5 mt-0 mt-md-5">
+        <ul class="list-group list-group-flush">
+            <!-- Item 1 -->
+            <li>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="col-md-7 col-sm-12 d-flex flex-column text-secondary mt-4 mt-md-0 pe-0 pe-md-4">
+                        <h1 class="order-1 order-md-1 display-4 pb-2">FilmBibWeb</h1>
+                        <p class="order-3 order-md-2 fs-5"> This was the first larger project I coded by myself at the age of 17 in order to help my dad, 
+                            structure and organize the loads of recorded movies and series he had collected over the years. 
+                            This project is based on a raspberry pi running a local Apache webserver and managing the MariaDB 
+                            that I created to keep track of the movies and their storage locations. </br>
+                            The webinterface which is based on PHP allows my dad to quickly check for already recorded movies and their current storage location.
+                            The scannning of the drives is done by a python script which also adds additional information to each movie entry by calling the IMDb-API.
+                        </p>
+                        <ul class="order-4 order-md-4 list-group list-group-horizontal flex-wrap col-sm-12">
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">PHP</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Python</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">MariaDB</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Raspberry Pi</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">HTML, CSS, JS</li>
+                        </ul>
+                    </div>
+                    <a class="order-2 order-md-3 mt-3 mt-md-0" href="https://github.com/OleDziewas/private-projects/tree/main/FilmBib" target="_blank" rel="noopener noreferrer">
+                        <img class="img-fluid border border-5 border rounded-3 border-secondary" src="../resources/filmbib.png" alt="Image of the frontpage of FilmBib">
+                    </a>
+                </div>
+            </li>
+            <!-- Item 2 -->
+            <hr class="border-3 opacity-75 border-secondary my-3 my-md-5">
+            <li>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="col-md-7 col-sm-12 d-flex flex-column text-secondary mt-4 mt-md-0 pe-0 pe-md-4">
+                        <h1 class="order-1 order-md-1 display-4 pb-2">Spotify-Playlist-Creator</h1>
+                        <p class="order-3 order-md-2 fs-5"> This was the first larger project I coded by myself at the age of 17 in order to help my dad, 
+                            structure and organize the loads of recorded movies and series he had collected over the years. 
+                            This project is based on a raspberry pi running a local Apache webserver and managing the MariaDB 
+                            that I created to keep track of the movies and their storage locations. </br>
+                            The webinterface which is based on PHP allows my dad to quickly check for already recorded movies and their current storage location.
+                            The scannning of the drives is done by a python script which also adds additional information to each movie entry by calling the IMDb-API.
+                        </p>
+                        <ul class="order-4 order-md-4 list-group list-group-horizontal flex-wrap col-sm-12">
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">SpotifyAPI</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">HTML, CSS, TypeScript</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Svelte</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Tailwind</li>
+                        </ul>
+                    </div>
+                    <a class="order-2 order-md-3 mt-3 mt-md-0" href="https://github.com/OleDziewas/playlist-creator" target="_blank" rel="noopener noreferrer">
+                        <img class="img-fluid border border-5 border rounded-3 border-secondary" src="../resources/SpotifyPlaylistCreator.png" alt="Image of the frontpage of Spotify-Playlist-Creator">
+                    </a>
+                </div>
+            </li>
+            <!-- Item 3 -->
+            <hr class="border-3 opacity-75 border-secondary my-3 my-md-5">
+            <li>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="col-md-7 col-sm-12 d-flex flex-column text-secondary mt-4 mt-md-0 pe-0 pe-md-4">
+                        <h1 class="order-1 order-md-1 display-4 pb-2">VR-Avatar-Reconstruction</h1>
+                        <p class="order-3 order-md-2 fs-5"> This was the first larger project I coded by myself at the age of 17 in order to help my dad, 
+                            structure and organize the loads of recorded movies and series he had collected over the years. 
+                            This project is based on a raspberry pi running a local Apache webserver and managing the MariaDB 
+                            that I created to keep track of the movies and their storage locations. </br>
+                            The webinterface which is based on PHP allows my dad to quickly check for already recorded movies and their current storage location.
+                            The scannning of the drives is done by a python script which also adds additional information to each movie entry by calling the IMDb-API.
+                        </p>
+                        <ul class="order-4 order-md-4 list-group list-group-horizontal flex-wrap col-sm-12">
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Python</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Keras</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Numpy</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Matplotlib</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">PyMO</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Google Colab</li>
+                        </ul>
+                    </div>
+                    <a class="order-2 order-md-3 mt-3 mt-md-0" href="https://github.com/OleDziewas/reconstruction-of-virtual-reality-avatars-from-sparse-data" target="_blank" rel="noopener noreferrer">
+                        <img class="img-fluid border border-5 border rounded-3 border-secondary" src="../resources/vravatar.png" alt="Matplot-Visualization of reconstructed VR avatar">
+                    </a>
+                </div>
+            </li>
+            <!-- Item 4 -->
+            <hr class="border-3 opacity-75 border-secondary my-3 my-md-5">
+            <li>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="col-md-7 col-sm-12 d-flex flex-column text-secondary mt-4 mt-md-0 pe-0 pe-md-4">
+                        <h1 class="order-1 order-md-1 display-4 pb-2">Personal Website</h1>
+                        <p class="order-3 order-md-2 fs-5"> This was the first larger project I coded by myself at the age of 17 in order to help my dad, 
+                            structure and organize the loads of recorded movies and series he had collected over the years. 
+                            This project is based on a raspberry pi running a local Apache webserver and managing the MariaDB 
+                            that I created to keep track of the movies and their storage locations. </br>
+                            The webinterface which is based on PHP allows my dad to quickly check for already recorded movies and their current storage location.
+                            The scannning of the drives is done by a python script which also adds additional information to each movie entry by calling the IMDb-API.
+                        </p>
+                        <ul class="order-4 order-md-4 list-group list-group-horizontal flex-wrap col-sm-12">
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">HTML</li>
+                            <li class="list-group-item list-group-item-info me-2 mb-2 border-2 rounded">Bootstrap</li>
+                        </ul>
+                    </div>
+                    <a class="order-2 order-md-3 mt-3 mt-md-0" href="../index.html">
+                        <img class="img-fluid border border-5 border rounded-3 border-secondary" src="../resources/PersonalWebsite.png" alt="Image of the frontpage of oledziewas.com">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
